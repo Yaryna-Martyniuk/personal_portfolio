@@ -1,42 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MY Personal Portfolio Yaryna Martyniuk</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <title>Personal Portfolio Yaryna Martyniuk</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+    <!-- START NAV -->
 
- <section>
-   <div class="nava">
-       <nav id="navbar">
-         <a href="#welcome-section" id="navi">About me  </a>
-         <a href="#projects" id="navi">Projects  </a>
-        <a href="#contact" id="navi"> Contact</a>
-       </nav>
-       </div>
-     </section>
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section">About me</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contacts</a>
+        </li>
+      </ul>
+    </nav>
 
-    <section id="welcome-section">
+    <!-- END NAV -->
+
+    <!-- START WELCOME SECTION -->
+
+    <section id="welcome-section" class="welcome-section">
       <h1>Hey, I am Yaryna</h1>
       <p>a front-end developer</p>
-          </section>
+    </section>
 
-     <section id="projects">
-       <h2>These are some of my projects</h2>
-       <p>
-         <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" class="project-tile" target="_blank">
-         <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"/>
-         <caption>Tribute Page</caption>
-         </a>
-     </section>
+    <!-- END WELCOME SECTION -->
 
-     <section id="contact">
-       <h3>You can contact me using any option below</h3>
-       <a href="https://github.com/freecodecamp" id="profile-link" target="_blank">GIT-HUB page</a>
-       <p>contact number</p>
-     </section>
+    <!-- START PROJECTS SECTION -->
+
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">These are some of my projects</h2>
+
+      <div class="projects-grid">
+        <a
+          href="https://yaryna-martyniuk.github.io/landing-page__PetStore/"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img class="project-image" src="img/pet_store.png" alt="project" />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Pet Store Landing page
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+
+        <a
+          href="https://yaryna-martyniuk.github.io/my-part--SportClothersStore/"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="img/sport_clothes_shop.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Sport Clothes Shop
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+
+        <a
+          href="https://yaryna-martyniuk.github.io/Bootstrap-Login-Form/"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img class="project-image" src="img/login_form.png" alt="project" />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Bootstrap Log In Form
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+      </div>
+
+      <a
+        href="https://github.com/Yaryna-Martyniuk"
+        class="btn btn-show-all"
+        target="_blank"
+        >Show all<i class="fas fa-chevron-right"></i
+      ></a>
+    </section>
+
+    <!-- END PROJECTS SECTION -->
+
+    <!-- START CONTACT SECTION -->
+
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Let's work together...</h2>
+        <p>You can contact me using...</p>
+      </div>
+      <div class="contact-links">
+        <a
+          href="https://www.facebook.com/yaruna.nov"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-facebook-square"></i> Facebook</a
+        >
+        <a
+          id="profile-link"
+          href="https://github.com/Yaryna-Martyniuk"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
     
+        <a
+          href="mailto:yaruna2904@gmail.com"
+          class="btn contact-details"
+          ><i class="fas fa-at"></i> Send a mail</a
+        >
+        <a href="tel:+380934938438" class="btn contact-details"
+          ><i class="fas fa-mobile-alt"></i> Call me</a
+        >
+      </div>
+    </section>
+
+    <!-- END CONTACT SECTION -->
+
+    <!-- START FOOTER SECTION -->
+
+    <footer>
+      <p>Created by Yaryna Martyniuk</p>
+    </footer>
+
+    <!-- END FOOTER SECTION -->
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
   </body>
-  </html>
+</html>
